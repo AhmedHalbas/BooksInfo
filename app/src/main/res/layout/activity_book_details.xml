@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".BookDetails"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/detailed_book_image"
+                tools:src="@drawable/reading"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/detailed_book_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Book Name"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"/>
+
+
+                <TextView
+                    android:id="@+id/detailed_book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Author Name"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorAccent"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/detailed_published_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Published By :"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"/>
+
+
+        <TextView
+            android:id="@+id/detailed_published_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Published date :"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/detailed_book_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="description"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

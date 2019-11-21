@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+   <EditText
+       android:id="@+id/book_search_et"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textSize="25sp"
+       android:textStyle="bold"
+       android:drawableLeft="@drawable/search"
+       android:drawablePadding="15dp"/>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_search_button"
+        android:layout_margin="15dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="2dp"
+            tools:listitem="@layout/list_item"/>
+
+        <ImageView
+            android:id="@+id/image_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/reading"
+            android:alpha="0.6"
+            android:layout_centerInParent="true"
+            android:layout_margin="25dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
